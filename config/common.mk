@@ -2,3 +2,6 @@
 
 # Bootanimation
 include vendor/custom/config/bootanimation.mk
+
+# GMS
+include vendor/custom/config/pixel.mk
