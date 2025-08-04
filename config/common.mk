@@ -14,6 +14,7 @@ endif
 
 # Overlay
 PRODUCT_PACKAGES += \
+    FrameworkOverlayCustom \
     SettingsOverlayCustom
 
 # version
