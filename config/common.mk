@@ -12,5 +12,9 @@ ifneq ($(TARGET_DISABLE_EPPE),true)
 $(call enforce-product-packages-exist-internal,$(wildcard device/*/$(CUSTOM_BUILD)/$(TARGET_PRODUCT).mk),product_manifest.xml rild Calendar android.hidl.memory@1.0-impl.vendor vndk_apex_snapshot_package)
 endif
 
+# Overlay
+PRODUCT_PACKAGES += \
+    SettingsOverlayCustom
+
 # version
 include vendor/custom/config/version.mk
